@@ -1,0 +1,59 @@
+# past tasks
+* DONE complete rocnn matlab implementation
+** DONE grid search
+'lr', 0.1, 'wd', 0.0005, 'df', 1.0, 'mu', 0.9, 'rot_prior',0.1, 'batch_size', 50: 0.75900
+# using vanilla minibatch
+'lr', 0.1, 'wd', 0.0005, 'df', 1.0, 'mu', 0.9, 'rot_prior',0.01, 'batch_size', 50: 0.75550
+# the following is in this setting 6/16/2015: used sample version
+'lr', lr, 'wd', 0.0005, 'df', 0.98, 'mu', 0.9, 'rot_prior',rp, 'batch_size', bs
+learning_rate         batch_size       rotation_prior           validation accuracy
+0.1                   10               1                        0.5945
+0.1                   10               0.1                      0.5590
+0.1                   10               0.01                     0.5740
+0.1                   50               1                        0.6940
+0.1                   50               0.1                      0.6660
+0.1                   50               0.01                     0.6985
+0.1                   100              1                        0.6660
+0.1                   100              0.1                      0.6930
+0.1                   100              0.01                     0.6325
+0.2                   10               1                        0.3165
+0.2                   10               0.1                      0.4420
+0.2                   10               0.01                     0.2785
+0.2                   50               1                        0.6915
+0.2                   50               0.1                      0.4790
+0.2                   50               0.01                     0.7110
+0.2                   100              1                        0.6570
+0.2                   100              0.1                      0.4505
+0.2                   100              0.01                     0.5075
+
+Lesson learned:
+a) per epoch decay does not seem like a good idea in this setting, 6% decrease in accuracy
+b) batch size of 10 is worse than batch size of 50 or 100 (especially true for large learning rate)
+# not true: c) rotation prior of 1 or 0.01 works better than 0.1
+
+# the following is in this setting 6/17/2015: used shuffle version
+'lr', lr, 'wd', 0.0005, 'df', 0.98, 'mu', 0.9, 'rot_prior',rp, 'batch_size', bs
+learning_rate         batch_size       rotation_prior           validation accuracy
+0.1                   50               10                       0.7715
+0.1                   50               0.001                    0.7850              # have the potential to go down even more, try reuse this model for another iteration of examples
+0.1                   100              10                       0.7405
+0.1                   100              0.001                    0.7130
+0.01                  50               10                       0.5675
+0.01                  50               0.001                    0.5820
+0.01                  100              10                       0.5585
+0.01                  100              0.001                    0.4925
+
+Lesson learned:
+a) learning rate of 0.01 is a bad choice
+b) batch_size of 50 seems to work best
+
+
+** DONE training and report result
+** DONE fix 3d max pooling (pass grad check)
+* DONE paper reading
+* DONE send computer to seatle
+* DONE go over torch7
+** DONE breifly scan the documentation
+** DONE complete the tutorial
+* DONE rewrite resume and send to buhuang liu
+* DONE get paid

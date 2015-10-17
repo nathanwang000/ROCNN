@@ -1,0 +1,24 @@
+A todo list for this week
+# for 7/8/2015
+* DONE generate a new dataset with 2 poses of all ones and 3's in the mnist rot
+  CLOSED: [2015-07-08 Wed 12:12]
+* TODO finish updateGrad, updateOutput, and a custom function to throw darts
+** TODO updateOutput
+** TODO updateGrad
+** DONE monteCarlo
+   CLOSED: [2015-07-12 Sun 17:28]
+* DONE finish reading what every driver should know
+  CLOSED: [2015-07-12 Sun 17:28]
+
+# week plan
+* DONE learn how to learn
+  CLOSED: [2015-07-12 Sun 17:28] DEADLINE: <2015-07-10 Fri>
+* DONE intro to datascience
+  CLOSED: [2015-07-12 Sun 17:28] SCHEDULED: <2015-07-12 Sun>
+
+
+
+
+
+
+

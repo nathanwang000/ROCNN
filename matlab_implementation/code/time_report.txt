@@ -1,0 +1,10 @@
+output time is 2.571765
+output time is 54.859676  *************** important since it is used twice, so the total time is 108 s
+output time is 53.481483
+dv_input time is 75.100351 ****************
+grad.W time is 29.040244
+grad.b time is 0.000091
+output time is 2.576414
+dv_input time is 2.678602
+grad.W time is 1.099538
+grad.b time is 0.006498

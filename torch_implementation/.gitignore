@@ -1,0 +1,9 @@
+outputs/*
+data/*
+pbsFiles/*
+NOTE.txt
+*.pyc
+*~
+*.mat
+*.amat
+*.zip
